@@ -32,6 +32,8 @@ permissions:
 jobs:
   build:
     runs-on: ${{ inputs.runner }}
+    env:
+      TZ: Asia/Shanghai
     steps:
       - uses: actions/checkout@v7
         with:
